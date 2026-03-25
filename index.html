@@ -125,18 +125,18 @@
           </summary>
           <div class="exp-panel">
             <div class="exp-panel-more exp-panel-helpcenter">
-              <p class="exp-hc-lead">方案设计分为两个层次：前端侧重信息架构重组与内容覆盖率提升；<strong>后端新增运营配置后台为本次方案的核心创新点</strong>，由本人在需求分析过程中主动识别问题并提出。</p>
+              <p class="exp-hc-lead">方案设计分为两个层次：前端侧重信息架构重组与反馈机制搭建；<strong>后端新增运营配置后台为本次方案的核心亮点</strong>，由本人在需求分析过程中主动识别问题并提出。</p>
               <p class="exp-hc-kicker">核心亮点 · 运营配置后台</p>
               <div class="exp-hc-compare" role="group" aria-label="内容更新链路对比">
                 <div class="exp-hc-card">
                   <div class="exp-hc-label before">优化前 · 内容更新链路</div>
                   <ul class="exp-hc-list">
                     <li class="strike">运营发现问题</li>
-                    <li class="strike">提交开发需求 → 等待排期</li>
-                    <li class="strike">开发实现（周级延迟）</li>
+                    <li class="strike">提交更新需求</li>
+                    <li class="strike">前端实现（延迟较长）</li>
                     <li class="strike">内容上线</li>
                   </ul>
-                  <p class="exp-hc-foot bad">✗ 每次更新依赖开发资源</p>
+                  <p class="exp-hc-foot bad">✗ 每次更新依赖前端资源</p>
                 </div>
                 <div class="exp-hc-card">
                   <div class="exp-hc-label after">优化后 · 运营自助配置</div>
@@ -162,24 +162,21 @@
                   <div class="exp-hc-metric-num">800</div>
                   <div class="exp-hc-metric-label">功能类工单减少 / 月</div>
                 </div>
-                <div class="exp-hc-metric">
-                  <div class="exp-hc-metric-num">0次</div>
-                  <div class="exp-hc-metric-label">内容更新所需开发排期</div>
-                </div>
+    
               </div>
-              <p class="exp-hc-note">ℹ 以上均为上线前预测值。费力度降幅基于调研数据量化推导（40%×14%），工单减少量基于历史功能类工单分析估算，已与业务及数据团队完成对齐确认，待功能上线后持续追踪实际数据。</p>
+              <p class="exp-hc-note">ℹ 以上均为上线前预测值。费力度降幅基于调研数据量化推导，工单减少量基于历史功能类工单分析估算，待功能上线后持续追踪实际数据。</p>
             </div>
           </div>
         </details>
         <details class="exp-detail">
           <summary class="exp-summary">
             <span class="exp-summary-text">鲜花订单处理提效</span>
-            <span class="exp-summary-hint">处理效率 +50%+ · 点击标题展开详情</span>
-            <p class="exp-summary-body">基于真实跟单体验与商家深度沟通，设计"条形码扫码直达"及"待处理订单 Tag"机制，订单处理效率 <span class="metric">提升 50%+</span>，有效提升商家高峰期履约稳定性。</p>
+            <span class="exp-summary-hint">处理效率 +50%+</span>
+            <p class="exp-summary-body">基于真实跟单体验与商家深度沟通，设计"条形码扫码直达"及"待处理订单 Tag"机制，大促期间订单处理效率 <span class="metric">提升 50%+</span>，有效提升商家高峰期履约稳定性。</p>
           </summary>
           <div class="exp-panel">
             <div class="exp-panel-more">
-              <p>跟单梳理商家从接单到出库的关键触点，发现扫码与订单状态识别是主要耗时环节；输出低保真流程与异常分支说明，推动研发评估实现成本。上线前与试点商家做可用性走查，根据反馈微调 Tag 规则与默认筛选，降低学习成本。</p>
+              <p>由于鲜花品类要求，商家需要进行实拍返图（入口在订单详情页面），原有订单处理流程链路较长。因此设计了条形码扫码直达功能，大大提高了订单处理效率。</p>
               <div class="order-flow-embed" role="img" aria-label="鲜花订单处理：优化前手动搜索与优化后扫码直达流程对比">
               <div class="flow-wrap">
               
@@ -333,24 +330,19 @@
                   <div class="result-num">50%+</div>
                   <div class="result-desc">订单处理效率提升<br>消除手动输入</div>
                 </div>
-              
               </div>
               </div>
+              <p>同时，增加“待处理”Tag，展示骑手已到店订单，帮助商家快速定位订单，减缓大促期间门店骑手拥堵压力。</p>
             </div>
           </div>
         </details>
-        <details class="exp-detail">
-          <summary class="exp-summary">
+        <div class="exp-detail exp-detail-static">
+          <div class="exp-summary exp-summary-static">
             <span class="exp-summary-text">系统性需求调研</span>
-            <span class="exp-summary-hint">走访 6 家商家 · 点击标题展开详情</span>
-            <p class="exp-summary-body">主导竞品核心功能 MLB 对标分析，深入走访 <span class="metric">6 家</span> 品类代表商家，最终输出结构化洞察报告，为产品迭代提供市场对标与真实场景双维度依据。</p>
-          </summary>
-          <div class="exp-panel">
-            <div class="exp-panel-more">
-              <p>建立对标维度（履约、售后、营销工具等）与证据来源表，每场商户访谈使用半结构化提纲，沉淀痛点优先级与可产品化机会。报告按「市场差距 / 场景证据 / 建议方向」组织，便于评审会上快速对齐决策。</p>
-            </div>
+            <span class="exp-summary-hint">走访 5+ 家商家</span>
+            <p class="exp-summary-body">主导竞品核心功能 MLB 对标分析，深入走访 <span class="metric">5+ 家</span> 品类代表商家，包含酒水、日料、菜市场等多元化品类，最终输出结构化洞察报告，为产品迭代提供市场对标与真实场景双维度依据。</p>
           </div>
-        </details>
+        </div>
       </div>
       <div class="exp-content lang-en">
         <details class="exp-detail">
@@ -575,18 +567,13 @@
             </div>
           </div>
         </details>
-        <details class="exp-detail">
-          <summary class="exp-summary">
+        <div class="exp-detail exp-detail-static">
+          <div class="exp-summary exp-summary-static">
             <span class="exp-summary-text">Structured discovery</span>
-            <span class="exp-summary-hint">6 merchant visits · tap heading for details</span>
+            <span class="exp-summary-hint">6 merchant visits</span>
             <p class="exp-summary-body">Led MLB-style benchmarking of competitor core flows and field visits to <span class="metric">6</span> representative merchants, delivering a structured insights report for roadmap and real-world context.</p>
-          </summary>
-          <div class="exp-panel">
-            <div class="exp-panel-more">
-              <p>Defined comparison axes (fulfillment, support, growth tools) and evidence logs; interviews followed a semi-structured guide to rank pains and productizable bets. The report grouped findings as market gap, field evidence, and recommended moves for faster review decisions.</p>
-            </div>
           </div>
-        </details>
+        </div>
       </div>
     </div>
     <div class="exp-item">
@@ -602,26 +589,21 @@
           <summary class="exp-summary">
             <span class="exp-summary-text">数据管理模块设计</span>
             <span class="exp-summary-hint">检查耗时 ↓近 80% · 点击标题展开详情</span>
-            <p class="exp-summary-body">独立设计集多源数据实时可视化于一体的数据看板，覆盖近百名员工，每日数据检查耗时 <span class="metric">缩短近 80%</span>。</p>
+            <p class="exp-summary-body">独立设计集多源数据实时可视化于一体的工单数据看板，每日工单数据检查耗时 <span class="metric">缩短近 80%，提升内部管理效率</span>。</p>
           </summary>
           <div class="exp-panel">
             <div class="exp-panel-more">
-              <p>梳理各业务线数据源与刷新频率，统一指标口径与异常告警规则；选用易读图表组件并做权限分层，避免敏感数据外泄。与使用者迭代看板布局，把「每日必看」指标固定在首屏，减少切换成本。</p>
+              <p>使用SQL查询并提取重要指标，基于公司内部数据分析平台进行数据可视化。与使用者迭代看板布局，确保关键指标固定在首屏，减少切换成本。</p>
             </div>
           </div>
         </details>
-        <details class="exp-detail">
-          <summary class="exp-summary">
+        <div class="exp-detail exp-detail-static">
+          <div class="exp-summary exp-summary-static">
             <span class="exp-summary-text">数据平台迁移</span>
-            <span class="exp-summary-hint">迁移策划与文档 · 点击标题展开详情</span>
-            <p class="exp-summary-body">参与内部数据平台迁移的策划，完成前端页面优化、数据整理和功能映射设计，撰写操作手册及文档。</p>
-          </summary>
-          <div class="exp-panel">
-            <div class="exp-panel-more">
-              <p>对照新旧平台字段与报表依赖关系，列出迁移批次与回滚预案；前端侧统一组件与筛选交互，降低培训成本。文档覆盖常见查询路径与故障排查，方便团队自助上手。</p>
-            </div>
+            <span class="exp-summary-hint">迁移策划与文档</span>
+            <p class="exp-summary-body">参与内部数据平台迁移的策划，包括前端页面优化、数据整理和功能映射设计，并撰写操作手册及文档。</p>
           </div>
-        </details>
+        </div>
       </div>
       <div class="exp-content lang-en">
         <details class="exp-detail">
@@ -636,18 +618,13 @@
             </div>
           </div>
         </details>
-        <details class="exp-detail">
-          <summary class="exp-summary">
+        <div class="exp-detail exp-detail-static">
+          <div class="exp-summary exp-summary-static">
             <span class="exp-summary-text">Platform migration</span>
-            <span class="exp-summary-hint">Planning &amp; docs · tap heading for details</span>
+            <span class="exp-summary-hint">Planning &amp; docs</span>
             <p class="exp-summary-body">Contributed to an internal analytics migration: UI refresh, data cleanup, feature mapping, and user documentation.</p>
-          </summary>
-          <div class="exp-panel">
-            <div class="exp-panel-more">
-              <p>Mapped fields and report dependencies across old and new stacks, sequenced cutover batches with rollback notes, and standardized filters/components on the frontend. Docs covered common paths and troubleshooting for self-serve adoption.</p>
-            </div>
           </div>
-        </details>
+        </div>
       </div>
     </div>
   </div>
