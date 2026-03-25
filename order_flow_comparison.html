@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>订单流程对比 · 示意</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="order-flow-standalone">
+<p class="order-flow-standalone-note">与作品集共用样式；正式展示见 <code>portfolio.html</code> 实习经历中的「鲜花订单处理提效」。</p>
+<div class="order-flow-embed">
+<div class="flow-wrap">
+
+  <!-- BEFORE -->
+  <div class="flow-label before">优化前 · 手动搜索流程</div>
+  <div class="steps-row">
+
+    <!-- Step 1: order list -->
+    <div class="step">
+      <div class="of-step-col">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-bar"><div class="phone-bar-icon"></div><div class="phone-bar-text"></div></div>
+          <div class="phone-list-item"><div class="phone-list-name"></div><div class="phone-list-meta"></div></div>
+          <div class="phone-list-item"><div class="phone-list-name"></div><div class="phone-list-meta"></div></div>
+          <div class="phone-list-item"><div class="phone-list-name"></div><div class="phone-list-meta"></div></div>
+          <div class="phone-list-item"><div class="phone-list-name"></div><div class="phone-list-meta"></div></div>
+        </div>
+        <div class="step-num">① 打开订单列表</div>
+      </div>
+    </div>
+
+    <div class="arrow-step">→</div>
+
+    <!-- Step 2: search input -->
+    <div class="step">
+      <div class="of-step-col">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="search-active">
+            <span class="search-icon">⌕</span>
+            <span class="type-text">18**</span>
+            <div class="search-cursor"></div>
+          </div>
+          <div class="phone-list-item dim"><div class="phone-list-name"></div><div class="phone-list-meta"></div></div>
+          <div class="phone-list-item dim"><div class="phone-list-name"></div><div class="phone-list-meta"></div></div>
+          <div class="phone-list-item dim"><div class="phone-list-name"></div><div class="phone-list-meta"></div></div>
+        </div>
+        <div class="step-num">② 手动输入订单号/手机号等</div>
+      </div>
+    </div>
+
+    <div class="arrow-step">→</div>
+
+    <!-- Step 3: search result -->
+    <div class="step">
+      <div class="of-step-col">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-bar of-search-bar"><div class="search-icon">⌕</div><div class="phone-bar-text"></div></div>
+          <div class="flow-result-count">搜索结果 (3条)</div>
+          <div class="phone-list-item"><div class="phone-list-name"></div><div class="phone-list-meta"></div></div>
+          <div class="phone-list-item highlight"><div class="phone-list-name highlight"></div><div class="phone-list-meta"></div></div>
+          <div class="phone-list-item"><div class="phone-list-name"></div><div class="phone-list-meta"></div></div>
+        </div>
+        <div class="step-num">③ 逐条核对结果</div>
+      </div>
+    </div>
+
+    <div class="arrow-step">→</div>
+
+    <!-- Step 4: detail -->
+    <div class="step">
+      <div class="of-step-col">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-detail-header">
+            <div class="phone-detail-title"></div>
+            <div class="phone-detail-sub"></div>
+          </div>
+          <div class="phone-detail-row"><div class="phone-detail-label"></div><div class="phone-detail-val"></div></div>
+          <div class="phone-detail-row"><div class="phone-detail-label"></div><div class="phone-detail-val"></div></div>
+          <div class="phone-detail-row"><div class="phone-detail-label"></div><div class="phone-detail-val narrow"></div></div>
+          <div class="phone-btn"></div>
+        </div>
+        <div class="step-num">④ 进入订单详情</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="time-badge">
+    <span class="time-val old">~45秒</span>
+    <span class="time-arrow">·</span>
+    <span class="time-caption">平均查找时长</span>
+  </div>
+
+  <div class="of-v-spacer"></div>
+
+  <!-- AFTER -->
+  <div class="flow-label after">优化后 · 条形码扫码直达</div>
+  <div class="steps-row">
+
+    <!-- Step 1: scan -->
+    <div class="step">
+      <div class="of-step-col">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-bar of-scan-header"><div class="phone-bar-text short"></div><div class="of-scan-label">扫一扫</div></div>
+          <div class="scan-frame">
+            <div class="scan-box">
+              <div class="scan-line"></div>
+              <div class="scan-corner tl"></div>
+              <div class="scan-corner tr"></div>
+              <div class="scan-corner bl"></div>
+              <div class="scan-corner br"></div>
+              <div class="barcode-lines abs">
+                <span style="width:2px"></span><span style="width:1px"></span><span style="width:3px"></span>
+                <span style="width:1px"></span><span style="width:2px"></span><span style="width:1px"></span>
+                <span style="width:3px"></span><span style="width:1px"></span><span style="width:2px"></span>
+                <span style="width:1px"></span><span style="width:3px"></span><span style="width:2px"></span>
+                <span style="width:1px"></span>
+              </div>
+            </div>
+          </div>
+          <div class="scan-hint">对准订单条形码</div>
+        </div>
+        <div class="step-num">① 扫描订单条形码</div>
+      </div>
+    </div>
+
+    <div class="arrow-step prominent">→</div>
+
+    <!-- Step 2: direct detail -->
+    <div class="step">
+      <div class="of-step-col">
+        <div class="phone of-highlight">
+          <div class="phone-notch"></div>
+          <div class="phone-detail-header of-accent-head">
+            <div class="phone-detail-title"></div>
+            <div class="phone-detail-sub"></div>
+          </div>
+          <div class="phone-detail-row"><div class="phone-detail-label"></div><div class="phone-detail-val"></div></div>
+          <div class="phone-detail-row"><div class="phone-detail-label"></div><div class="phone-detail-val"></div></div>
+          <div class="phone-detail-row"><div class="phone-detail-label"></div><div class="phone-detail-val narrow"></div></div>
+          <div class="phone-btn of-accent-btn"></div>
+        </div>
+        <div class="step-num">② 直达订单详情页</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="time-badge">
+    <span class="time-val new">~18秒</span>
+    <span class="time-arrow">·</span>
+    <span class="time-caption muted">平均查找时长</span>
+  </div>
+
+  <div class="result-bar">
+    <div class="result-num">50%+</div>
+    <div class="result-desc">订单处理效率提升<br>4步精简至2步，消除手动输入</div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
