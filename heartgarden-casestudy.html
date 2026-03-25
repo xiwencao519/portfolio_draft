@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light" data-lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heart Garden · 案例详情 · 曹曦文</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+<style>
+.case-page { min-height: 100vh; background: var(--bg-primary); }
+.case-nav-back { text-decoration: none; color: var(--text-secondary); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.14em; transition: color 0.25s ease; }
+.case-nav-back:hover { color: var(--accent); }
+.case-hero { padding: 8rem 4rem 3.2rem; }
+.case-inner { max-width: 900px; margin: 0 auto; }
+.case-kicker { font-family: 'Outfit', sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); margin-bottom: 0.8rem; font-weight: 500; }
+.case-title { font-family: 'Cormorant Garamond', 'Noto Serif SC', serif; font-size: clamp(2.1rem, 4.6vw, 3.2rem); font-weight: 400; line-height: 1.15; margin-bottom: 1rem; }
+.case-title em { color: var(--accent); font-style: italic; }
+.case-lead { font-size: 0.92rem; line-height: 1.85; color: var(--text-secondary); max-width: 760px; }
+.case-meta { margin-top: 1.6rem; display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--bg-secondary); }
+.case-meta-item { padding: 1rem 1.1rem; border-right: 1px solid var(--line); }
+.case-meta-item:last-child { border-right: none; }
+.case-meta-k { font-family: 'Outfit', sans-serif; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-tertiary); margin-bottom: 0.35rem; }
+.case-meta-v { font-size: 0.82rem; color: var(--text-primary); }
+.case-meta-v.accent { color: var(--accent); font-weight: 500; }
+.case-section { padding: 3.6rem 4rem; }
+.case-section.alt { background: var(--bg-secondary); }
+.case-section .section-inner { max-width: 900px; }
+.case-section .divider { margin-bottom: 1.8rem; }
+.case-prose { font-size: 0.9rem; line-height: 1.9; color: var(--text-secondary); }
+.case-prose strong { color: var(--text-primary); font-weight: 500; }
+.case-grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 1rem; }
+.case-grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 1rem; }
+.case-card { background: var(--bg-primary); border: 1px solid var(--line); border-radius: 8px; padding: 1rem; }
+.case-section.alt .case-card { background: var(--bg-secondary); }
+.case-card-tag { font-family: 'Outfit', sans-serif; font-size: 0.6rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.45rem; font-weight: 500; }
+.case-card-body { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.65; }
+.case-callout { margin-top: 1rem; padding: 0.95rem 1.1rem; border-left: 2px solid var(--accent); border-radius: 0 8px 8px 0; background: var(--accent-soft); font-size: 0.83rem; color: var(--text-secondary); line-height: 1.75; }
+.case-callout strong { color: var(--accent); font-weight: 500; }
+.market-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 1rem; }
+.market-item { background: var(--bg-primary); text-align: center; padding: 1rem 0.7rem; border-top: 2px solid var(--accent); }
+.case-section.alt .market-item { background: var(--bg-secondary); }
+.market-tag { font-family: 'Outfit', sans-serif; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-tertiary); }
+.market-num { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.9rem; color: var(--accent); line-height: 1.1; margin: 0.2rem 0; }
+.market-desc { font-size: 0.72rem; color: var(--text-secondary); }
+html[data-lang="en"] .lang-zh { display: none !important; }
+html[data-lang="zh"] .lang-en { display: none !important; }
+@media (max-width: 900px) {
+  .case-hero, .case-section { padding-left: 1.8rem; padding-right: 1.8rem; }
+  .case-meta { grid-template-columns: 1fr 1fr; }
+  .case-meta-item { border-right: none; border-bottom: 1px solid var(--line); }
+  .case-meta-item:nth-last-child(-n+2) { border-bottom: none; }
+}
+@media (max-width: 680px) { .case-grid3, .case-grid2, .market-row, .case-meta { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body class="case-page">
+<nav>
+  <div class="logo"><span class="lang-zh">曹曦文</span><span class="lang-en">Xiwen Cao</span></div>
+  <div class="nav-right">
+    <a class="case-nav-back lang-zh" href="index.html#projects">返回项目经历</a>
+    <a class="case-nav-back lang-en" href="index.html#projects">Back to Projects</a>
+    <div class="nav-controls">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn active" id="langZh" aria-pressed="true">中文</button>
+        <button type="button" class="lang-btn" id="langEn" aria-pressed="false">EN</button>
+      </div>
+      <div class="toggle-wrap">
+        <button type="button" class="theme-icon-btn" id="themeToggle" aria-label="切换为深色模式">
+          <svg class="theme-svg theme-svg-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="theme-svg theme-svg-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<header class="case-hero">
+  <div class="case-inner fade-in">
+    <p class="case-kicker lang-zh">UMich +Tech 创新比赛 · 2024 · 产品经理</p>
+    <p class="case-kicker lang-en">UMich +Tech Innovation · 2024 · Product Lead</p>
+    <h1 class="case-title lang-zh">Heart Garden<br><em>从分手中治愈与成长</em></h1>
+    <h1 class="case-title lang-en">Heart Garden<br><em>Healing and Growth After Breakups</em></h1>
+    <p class="case-lead lang-zh">面向年轻女性分手后的情感低谷场景，设计融合 AI 情感支持、游戏化成长与匿名社区的移动应用。</p>
+    <p class="case-lead lang-en">A mobile concept for young women recovering from breakups, blending AI emotional support, gamified progress, and an anonymous community.</p>
+    <div class="case-meta">
+      <div class="case-meta-item"><div class="case-meta-k lang-zh">角色</div><div class="case-meta-k lang-en">Role</div><div class="case-meta-v lang-zh">产品经理 + UI/UX 设计师</div><div class="case-meta-v lang-en">Product Manager + UI/UX Designer</div></div>
+      <div class="case-meta-item"><div class="case-meta-k lang-zh">调研</div><div class="case-meta-k lang-en">Research</div><div class="case-meta-v">10+ Interviews · 5+ Competitors</div></div>
+      <div class="case-meta-item"><div class="case-meta-k lang-zh">核心技术</div><div class="case-meta-k lang-en">Tech</div><div class="case-meta-v">NLP · BFS · RAG</div></div>
+      <div class="case-meta-item"><div class="case-meta-k lang-zh">目标市场</div><div class="case-meta-k lang-en">Market</div><div class="case-meta-v accent">SOM 22.7M</div></div>
+    </div>
+  </div>
+</header>
+<section class="case-section">
+  <div class="section-inner fade-in">
+    <p class="section-label">Problem</p>
+    <h2 class="section-title lang-zh">问题定义</h2><h2 class="section-title lang-en">Problem Framing</h2>
+    <div class="divider"></div>
+    <div class="case-grid3">
+      <div class="case-card"><div class="case-card-tag lang-zh">适应不良应对</div><div class="case-card-tag lang-en">Maladaptive Coping</div><div class="case-card-body lang-zh">缺乏健康引导工具，多数人依赖回避或过度社交。</div><div class="case-card-body lang-en">Limited healthy tools; many rely on avoidance or over-socializing.</div></div>
+      <div class="case-card"><div class="case-card-tag lang-zh">缺乏真实共情</div><div class="case-card-tag lang-en">Lack of Empathy</div><div class="case-card-body lang-zh">泛化安慰难以满足个体化情绪支持。</div><div class="case-card-body lang-en">Generic comfort rarely provides personalized emotional support.</div></div>
+      <div class="case-card"><div class="case-card-tag lang-zh">心理韧性难建立</div><div class="case-card-tag lang-en">Resilience Gap</div><div class="case-card-body lang-zh">短期疏导多，长期成长路径弱。</div><div class="case-card-body lang-en">Short-term relief is common, but long-term growth paths are weak.</div></div>
+    </div>
+  </div>
+</section>
+<section class="case-section alt">
+  <div class="section-inner fade-in">
+    <p class="section-label">Research</p>
+    <h2 class="section-title lang-zh">调研洞察与取舍</h2><h2 class="section-title lang-en">Insights and Trade-offs</h2>
+    <div class="divider"></div>
+    <div class="case-grid2">
+      <div class="case-card"><div class="case-card-tag lang-zh">用户访谈 · 10+ 人</div><div class="case-card-tag lang-en">Interviews · 10+</div><div class="case-card-body lang-zh"><strong>10/12 用户倾向被动消费共鸣内容</strong>，而非主动发帖。</div><div class="case-card-body lang-en"><strong>10/12 users preferred passive relatable content</strong> over active posting.</div></div>
+      <div class="case-card"><div class="case-card-tag lang-zh">竞品分析 · 5+ 款</div><div class="case-card-tag lang-en">Competitors · 5+</div><div class="case-card-body lang-zh">识别 AI 个性化陪伴与成长可视化的市场空白。</div><div class="case-card-body lang-en">Found whitespace in AI personalization and growth visualization.</div></div>
+    </div>
+    <div class="case-callout lang-zh"><strong>取舍：</strong>将“实时伙伴匹配”降级，优先投入 AI 对话与情绪可视化。</div>
+    <div class="case-callout lang-en"><strong>Trade-off:</strong> Deprioritized live matching and focused phase one on AI dialogue and emotion visualization.</div>
+  </div>
+</section>
+<section class="case-section">
+  <div class="section-inner fade-in">
+    <p class="section-label">Solution</p>
+    <h2 class="section-title lang-zh">产品功能</h2><h2 class="section-title lang-en">Product Features</h2>
+    <div class="divider"></div>
+
+    <div class="case-card" style="margin-bottom:10px;">
+      <div class="case-card-tag lang-zh">游戏化 · 行动引导</div><div class="case-card-tag lang-en">Gamification · Action Design</div>
+      <div class="case-card-body lang-zh">
+        <strong>任务种子 · 花园成长系统</strong><br>
+        将情感复原任务游戏化，完成任务推动花园植物生长，以视觉化进度代替抽象「自我提升」。<br><br>
+        - <strong>AI 个性化推荐</strong>任务，而非固定菜单，与对话内容动态关联<br>
+        - 任务<strong>极小化设计</strong>（5分钟内可完成），确保最低谷时也能启动<br>
+        - 完成即触发植物生长动效，构建持续<strong>正向反馈循环</strong>
+      </div>
+      <div class="case-card-body lang-en">
+        <strong>Task Seeds · Garden Growth System</strong><br>
+        Recovery tasks are gamified: completing tasks grows plants in the garden, turning abstract self-improvement into visible progress.<br><br>
+        - <strong>AI-personalized tasks</strong> instead of static menus, dynamically linked to dialogue context<br>
+        - <strong>Micro-task design</strong> (finishable within ~5 minutes) to lower activation threshold during emotional lows<br>
+        - Immediate growth feedback after completion to reinforce a sustained <strong>positive loop</strong>
+      </div>
+    </div>
+
+    <div class="case-card" style="margin-bottom:10px;">
+      <div class="case-card-tag lang-zh">AI · 五阶段渐进引导</div><div class="case-card-tag lang-en">AI · Five-Stage Guidance</div>
+      <div class="case-card-body lang-zh">
+        <strong>AI 情感对话系统</strong><br>
+        核心原则：把「给正确答案」转变为「让用户感到被理解」。基于心理学知识库 RAG 训练，五阶段策略精准控制对话节奏。<br><br>
+        - 前几轮<strong>只做情感反映</strong>，不给建议，让用户先感到被听见<br>
+        - 识别反复出现的情绪模式，帮用户<strong>命名与梳理</strong>核心痛点<br>
+        - 情绪稳定后轻推<strong>极小行动</strong>，无缝衔接任务种子系统<br>
+        - 实时评估情绪等级，Level 3 自动触发<strong>专业资源转介</strong>
+      </div>
+      <div class="case-card-body lang-en">
+        <strong>AI Emotional Dialogue System</strong><br>
+        Core principle: shift from “giving the right answer” to “helping users feel understood.” A psychology-informed RAG base supports a five-stage conversational cadence.<br><br>
+        - In early turns, the AI focuses on <strong>emotional reflection</strong> rather than advice<br>
+        - It detects recurring emotional patterns and helps users <strong>name and structure</strong> core pain points<br>
+        - After stabilization, it nudges <strong>micro-actions</strong> and hands off to the task-seed system<br>
+        - Real-time emotional risk scoring triggers <strong>professional referral</strong> at Level 3
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-card-tag lang-zh">社区 · 被动共鸣优先</div><div class="case-card-tag lang-en">Community · Passive Resonance First</div>
+      <div class="case-card-body lang-zh">
+        <strong>匿名内容社区</strong><br>
+        基于访谈洞察将「实时匹配」调整为<strong>只读优先</strong>的匿名故事社区——先让用户感到「有人和我一样」，再逐步降低主动发布门槛。<br><br>
+        - 用「🕯️我懂」「🌱我后来好了」替代数字点赞，避免<strong>表演性内容</strong><br>
+        - 优先展示成长故事，以<strong>积极框架</strong>定义社区基调<br>
+        - 发布默认匿名 + 限评 + 48小时消失；3秒冷静期减少冲动发布<br>
+        - 风控原则：把「规则执行」转化为「<strong>关系关怀</strong>」
+      </div>
+      <div class="case-card-body lang-en">
+        <strong>Anonymous Story Community</strong><br>
+        Based on interviews, “real-time matching” was replaced by a <strong>read-first</strong> anonymous story feed: users first feel “I am not alone,” then gradually gain confidence to post.<br><br>
+        - Replace numeric likes with “I understand” / “I got better” reactions to reduce <strong>performative content</strong><br>
+        - Prioritize recovery narratives to establish a <strong>positive community frame</strong><br>
+        - Default anonymous posting + limited comments + 48h auto-expiry; 3-second cool-down for impulsive posts<br>
+        - Risk governance principle: turn rule enforcement into <strong>relationship-centered care</strong>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="case-section alt">
+  <div class="section-inner fade-in">
+    <p class="section-label">Business</p>
+    <h2 class="section-title lang-zh">市场规模与商业化</h2><h2 class="section-title lang-en">Market and Monetization</h2>
+    <div class="divider"></div>
+    <div class="market-row">
+      <div class="market-item"><div class="market-tag">TAM</div><div class="market-num">76.5M</div><div class="market-desc lang-zh">美国 18–34 岁人口</div><div class="market-desc lang-en">US population aged 18–34</div></div>
+      <div class="market-item"><div class="market-tag">SAM</div><div class="market-num">52.8M</div><div class="market-desc lang-zh">有过恋爱关系人群</div><div class="market-desc lang-en">People with relationship history</div></div>
+      <div class="market-item"><div class="market-tag">SOM</div><div class="market-num">22.7M</div><div class="market-desc lang-zh">分手后心理困境人群</div><div class="market-desc lang-en">Post-breakup distress segment</div></div>
+    </div>
+  </div>
+</section>
+<footer><span class="lang-zh">© 2025 曹曦文 · Heart Garden 案例</span><span class="lang-en">© 2025 Xiwen Cao · Heart Garden Case Study</span></footer>
+<script>
+const html = document.documentElement;
+const toggle = document.getElementById('themeToggle');
+const langZh = document.getElementById('langZh');
+const langEn = document.getElementById('langEn');
+function currentLang() { return html.getAttribute('data-lang') || 'zh'; }
+function syncThemeAria() {
+  const theme = html.getAttribute('data-theme');
+  const lang = currentLang();
+  toggle.setAttribute('aria-label', lang === 'zh' ? (theme === 'dark' ? '切换为浅色模式' : '切换为深色模式') : (theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'));
+}
+function setLang(lang) {
+  html.setAttribute('data-lang', lang);
+  html.setAttribute('lang', lang === 'en' ? 'en' : 'zh-CN');
+  document.title = lang === 'en' ? 'Heart Garden · Case Study · Xiwen Cao' : 'Heart Garden · 案例详情 · 曹曦文';
+  langZh.classList.toggle('active', lang === 'zh');
+  langEn.classList.toggle('active', lang === 'en');
+  langZh.setAttribute('aria-pressed', lang === 'zh' ? 'true' : 'false');
+  langEn.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
+  localStorage.setItem('lang', lang);
+  syncThemeAria();
+}
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) html.setAttribute('data-theme', savedTheme);
+const savedLang = localStorage.getItem('lang');
+if (savedLang === 'en' || savedLang === 'zh') setLang(savedLang); else syncThemeAria();
+toggle.addEventListener('click', () => {
+  const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  syncThemeAria();
+});
+langZh.addEventListener('click', () => setLang('zh'));
+langEn.addEventListener('click', () => setLang('en'));
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+</body>
+</html>
